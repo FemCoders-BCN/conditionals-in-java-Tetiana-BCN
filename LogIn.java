@@ -8,17 +8,17 @@ public class LogIn {
         //Averigua como hacer para poder ingresar el dato justo al lado de lo que termine la pregunta, es decir, que no haga un salto de línea.
         Scanner scanner = new Scanner(System.in);
             
-        System.out.println("Hola, buenas! ¿Cuál es su nombre de usuario?");
+        System.out.print("Hola, buenas! ¿Cuál es su nombre de usuario?");
     
             String nombre = scanner.nextLine();
            
-            System.out.println("\nHola, "+nombre+"! ¿Cuál es su apellido, por favor?\n");
+            System.out.print("Hola, "+nombre+"! ¿Cuál es su apellido, por favor?");
             String apellido = scanner.nextLine();
            
-            System.out.println("\nGracias, "+nombre+" "+apellido+"! ¿Qué nombre de usuario querría elegir?\n");
+            System.out.print("Gracias, "+nombre+" "+apellido+"! ¿Qué nombre de usuario querría elegir?");
             String usuario = scanner.nextLine();
            
-            System.out.println("\nDe acuerdo, su nombre de ususario será "+usuario+". Y ahora elija una contraseña.\n");
+            System.out.print("De acuerdo, su nombre de ususario será "+usuario+". Y ahora elija una contraseña.");
             String contraseña = scanner.nextLine();
     
             //Añade una nueva línea antes de mostrar la siguiente pregunta.
