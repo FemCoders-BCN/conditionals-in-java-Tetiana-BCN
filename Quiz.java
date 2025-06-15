@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Quiz {
     public static void main(String[] args) {
         //Escribe un programa que sea un pequeño juego trivial de acertar preguntas
@@ -8,7 +10,18 @@ public class Quiz {
         //Si el puntaje es menor de 15 pero mayor o igual a 5, imprime: No lo has hecho mal
         //De lo contrario imprime: Buena suerte la próxima vez
         //Las opciones a, b, c y d de cada pregunta, deberán dejar en terminal un espacio de sangría, averigua como hacerlo en java
+        Scanner scanner = new Scanner(System.in);
 
+        int puntos = 0;
+        System.out.println("Bienvenide al juego! Serán 4 preguntas sobre las coders del mundo. Tienes que escribir solo la letra correcta según tu opinión.\n");
+        System.out.println("La primera pregunta es:\n 1. ¿Quién fue la hacker que escribió en 1994 Hacking the Wetware?");
+        String correctAnswer1 = "b";
+        String userAnswer1 = scanner.nextLine();
+        
+        if (userAnswer1.equals("b") {
+         puntos +=5;
+        }
+        scanner.close();
         //Preguntas:
         /* 1. ¿Quién fue la hacker que escribió en 1994 Hacking the Wetware?
                 a. Ada Lovelace
