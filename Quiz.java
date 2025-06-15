@@ -15,13 +15,41 @@ public class Quiz {
         int puntos = 0;
         System.out.println("Bienvenide al juego! Serán 4 preguntas sobre las coders del mundo. Tienes que escribir solo la letra correcta según tu opinión.\n");
         System.out.println("La primera pregunta es:\n 1. ¿Quién fue la hacker que escribió en 1994 Hacking the Wetware?");
-        String correctAnswer1 = "b";
+       
         String userAnswer1 = scanner.nextLine();
         
-        if (userAnswer1.equals("b") {
+        if (userAnswer1.equals("b")) {
          puntos +=5;
         }
-        scanner.close();
+       
+
+        System.out.println("La segunda pregunta es:\n 2. ¿Quién es Fuencisla Clemares?");
+        String userAnswer2 = scanner.nextLine();
+        if (userAnswer2.equals("c")) {
+         puntos +=5;
+        }
+
+        System.out.println("La tercera pregunta es:\n 3. ¿Quién fue Hedwig Eva Maria Kiesler, conocida como Hedy Lamarr?");
+        String userAnswer3 = scanner.nextLine();
+        if (userAnswer3.equals("b") || userAnswer3.equals("d")) {
+         puntos +=5;
+        }
+        
+        System.out.println("La cuarta pregunta es:\n 4. ¿Cómo se llamaban las principales 'mujeres ocultas' de la NASA, encargadas de los cálculos para que la misión del Apolo 11 concluyera con éxito?");
+        String userAnswer4 = scanner.nextLine();
+        if (userAnswer4.equals("a")) {
+         puntos +=5;
+        }
+        System.out.println("Tu puntaje es: " + puntos + "/20");
+        if (puntos >= 15) {
+            System.out.println("Tú si que sabes mucho");
+        } else if (puntos >= 5) {
+            System.out.println("No lo has hecho mal");
+        } else {
+            System.out.println("Buena suerte la próxima vez");
+        }   
+
+         scanner.close();
         //Preguntas:
         /* 1. ¿Quién fue la hacker que escribió en 1994 Hacking the Wetware?
                 a. Ada Lovelace
