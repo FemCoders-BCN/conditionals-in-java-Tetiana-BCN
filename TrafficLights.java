@@ -13,7 +13,7 @@ public class TrafficLights {
             System.out.println("¡¡¡Para!!!");
         } else {
             System.out.println("El semáforo está dañado");
-        };
+        }
         //Si es verde imprime en la terminal: Puedes seguir
         //Si es amarillo imprime en la terminal: Ten cuidado
         //Si es rojo imprime en la terminal: ¡¡¡Para!!!

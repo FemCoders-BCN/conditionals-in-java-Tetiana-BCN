@@ -4,9 +4,10 @@ public class Weather {
     public static void main(String[] args) {
         //Escribe un programa que pida al usuario que ingrese la temperatura en celcius de su ciudad (La pregunta y la respuesta deberá estar en una sola línea) y según ello devuelva lo siguiente:
         Scanner scanner = new Scanner(System.in);
-        int temp = scanner.nextInt();
+        
         System.out.println("Cuantos grados de celcius hace hoy en tu ciudad?");
         
+        int temp = scanner.nextInt();
         if (temp < 0) {
             System.out.println("Te estás congelando");
         } else if (temp == 0 || temp <= 10) {
@@ -19,7 +20,7 @@ public class Weather {
             System.out.println("Que calooorrrrr");
         } else {
             System.out.println("Ahí no hay quien viva");
-        };
+        }
 
         scanner.close();
 
